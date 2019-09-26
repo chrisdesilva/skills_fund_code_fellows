@@ -26,12 +26,23 @@ const FAQ = () => {
           <div onClick={() => showq1(!q1)}><h3 className="text-lg text-lg uppercase text-primary flex items-center cursor-pointer"><span className="text-sm"><FaAngleDown /></span>How much can I borrow and for what specific uses?</h3></div>
           <Collapse isOpened={q1} springConfig={{stiffness: 150, damping: 30}}>
           <p>The maximum amount you can borrow will depend on your program.{faq.costOfLiving && <span> You can finance your tuition and cost of living expenses.</span>}</p>
+               <p>You may borrow from $2,000 to the financing maximum (depending on course or bundle) for the Full-Time Immersive program:</p>
                <ul className="mb-0 pb-4">
-                    {faq.loanRange.map(program => {
-                         return <li>
-                              <strong>For {program.programName},</strong> you may borrow from $2,000 up to {program.maxAmount} for tuition. {program.col ? <span>You may also borrow up to {program.colAmount} for cost of living.</span> : <span>Cost of living is not available for this program.</span>}
-                         </li>
-                    })}
+                    <li><strong>201: </strong>$5,000 ($3,500 tuition + $1,500 cost of living)</li>
+                    <li><strong>301: </strong>$6,000 ($4,500 tuition + $1,500 cost of living)</li>
+                    <li><strong>401: </strong>$15,750 ($12,000 tuition + $3,750 cost of living)</li>
+                    <li><strong>201 + 301 bundle: </strong>$11,000 ($8,000 tuition + $3,000 cost of living)</li>
+                    <li><strong>301 + 401 bundle: </strong>$21,750 ($16,500 tuition + $5,250 cost of living)</li>
+                    <li><strong>201 + 301 + 401 bundle: </strong>$25,250 ($18,500 tuition + $6,750 cost of living)</li>
+               </ul>
+               <p>You may borrow from $2,000 to the tuition maximum for the Part-Time Immersive program. Cost of living is not available for the Nights & Weekends Tracks:</p>
+               <ul className="mb-0 pb-4">
+                    <li><strong>201: </strong>$3,500 tuition</li>
+                    <li><strong>301: </strong>$4,500 tuition</li>
+                    <li><strong>401: </strong>$12,000 tuition</li>
+                    <li><strong>201 + 301 bundle: </strong>$8,000 tuition</li>
+                    <li><strong>301 + 401 bundle: </strong>$16,500 tuition</li>
+                    <li><strong>201 + 301 + 401 bundle: </strong>$18,500 tuition</li>
                </ul>
                {faq.costOfLiving && <p className="mb-0 pb-4"><strong>Please note:</strong> In order to finance cost of living, borrow at least $2,000 in tuition financing. You will pay your cash deposit directly to <strong>{schoolName}</strong>.</p>}
           </Collapse>
