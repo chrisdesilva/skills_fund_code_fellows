@@ -171,7 +171,7 @@ export const faq = {
       colAmount: "$6,000",
     },
     {
-      programName: "PROGRAM 2",
+      programName: "the Part-Time Immersive program",
       maxAmount: "$10,750",
       col: false,
       colAmount: "$6,000",
