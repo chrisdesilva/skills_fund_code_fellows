@@ -58,13 +58,13 @@ const FAQ = () => {
             )
           })}
         </ul>
-        {faq.costOfLiving && (
+        {/* {faq.costOfLiving && (
           <p className="mb-0 pb-4">
             <strong>Please note:</strong> In order to finance cost of living,
             borrow at least $2,000 in tuition financing. You will pay your cash
             deposit directly to <strong>{schoolName}</strong>.
           </p>
-        )}
+        )} */}
       </Collapse>
 
       <div onClick={() => showq2(!q2)}>

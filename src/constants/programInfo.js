@@ -165,14 +165,14 @@ export const faq = {
   // max loan amounts by program for faq1
   loanRange: [
     {
-      programName: "the Full-Time Immersive program",
-      maxAmount: "$28,750, depending on your program and bundle,",
+      programName: "the Software Development Daytime program",
+      maxAmount: "$23,000, depending on your program and bundle,",
       col: true,
       colAmount: "$6,000",
     },
     {
-      programName: "the Part-Time Immersive program",
-      maxAmount: "$10,750",
+      programName: "the Software Development Nights & Weekends program",
+      maxAmount: "$23,000",
       col: false,
       colAmount: "$6,000",
     },
@@ -205,7 +205,7 @@ export const threeStepCardText = {
   step2: {
     header: "select your program",
     text:
-      "Choose between the Full-Time Immersive and Part-Time Immersive programs.",
+      "Choose between the Software Development Daytime and Software Development Nights & Weekends programs.",
   },
   step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`,
 }
@@ -233,7 +233,7 @@ export const moreThanSixPrograms = false // set to true if there are 7 or more p
 export const programLoanInfo = [
   // update with program names and corresponding loan URLs with market segment code from Master Loan Parameters
   {
-    name: "Full-Time Immersive",
+    name: "Software Development Daytime",
     url: "https://my.skills.fund/application?lenderCode=SKCFFT18",
     loanInfo: {
       // match loanInfo in first metro below
@@ -273,7 +273,7 @@ export const programLoanInfo = [
     ],
   },
   {
-    name: "Part-Time Immersive",
+    name: "Software Development Nights & Weekends",
     url: "https://my.skills.fund/application?lenderCode=SKCFPT18",
     loanInfo: {
       // match loanInfo in first metro below
