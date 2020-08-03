@@ -166,7 +166,7 @@ export const faq = {
   loanRange: [
     {
       programName: "the Software Development Daytime program",
-      maxAmount: "$23,000, depending on your program and bundle,",
+      maxAmount: "$23,000",
       col: true,
       colAmount: "$6,000",
     },
