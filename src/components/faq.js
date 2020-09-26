@@ -58,13 +58,13 @@ const FAQ = () => {
             )
           })}
         </ul>
-        {/* {faq.costOfLiving && (
+        {faq.costOfLiving && (
           <p className="mb-0 pb-4">
             <strong>Please note:</strong> In order to finance cost of living,
             borrow at least $2,000 in tuition financing. You will pay your cash
             deposit directly to <strong>{schoolName}</strong>.
           </p>
-        )} */}
+        )}
       </Collapse>
 
       <div onClick={() => showq2(!q2)}>
@@ -406,7 +406,10 @@ const FAQ = () => {
           credit health. In some cases, adding a cosigner can improve your
           interest rate. If you are concerned about your credit health, consider
           adding a cosigner with strong credit health to potentially improve
-          your interest rate.
+          your interest rate. Additionally, a student who is not a U.S. citizen
+          or U.S. permanent resident or has Deferred Action for Childhood
+          Arrival (DACA) status may apply with a creditworthy cosigner who is a
+          U.S. citizen or U.S. permanent resident.
         </p>
         {/* <p className="mb-0 pb-4">
           Learn more about our{" "}
