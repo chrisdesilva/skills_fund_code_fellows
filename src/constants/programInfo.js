@@ -176,6 +176,18 @@ export const faq = {
       col: false,
       colAmount: "$6,000",
     },
+    {
+      programName: "the Cybersecurity Daytime program",
+      maxAmount: "$23,000",
+      col: true,
+      colAmount: "$6,000",
+    },
+    {
+      programName: "the Cybersecurity Nights & Weekends program",
+      maxAmount: "$23,000",
+      col: false,
+      colAmount: "$6,000",
+    },
   ],
 }
 
@@ -275,6 +287,86 @@ export const programLoanInfo = [
   {
     name: "Software Development Nights & Weekends",
     url: "https://my.skills.fund/application?lenderCode=SKCFPT18",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 22000,
+      loanTerm36: true,
+      loanTerm60: true,
+      "Interest Only": {
+        k: 5,
+      },
+      "Immediate Repayment": {
+        apr36: 12.36,
+        apr60: 13.14,
+      },
+    },
+    defaultLoanType: "Immediate Repayment", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false,
+    showLoanTypes: false,
+    loanTypes: ["Immediate Repayment"],
+    locations: ["Metro 1", "Metro 2"],
+    metros: [
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // match loanInfo to Program 2 loanInfo above
+          maxLoanAmt: 22000,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 5,
+          },
+          "Immediate Repayment": {
+            apr36: 12.36,
+            apr60: 13.14,
+          },
+        },
+      },
+    ],
+  },
+  {
+    name: "Cybersecurity Daytime",
+    url: "https://my.skills.fund/application?lenderCode=SKCSFT20",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 28750,
+      loanTerm36: true,
+      loanTerm60: true,
+      "Interest Only": {
+        // interest-only
+        k: 7,
+        apr36: 11.5,
+        apr60: 12.8,
+      },
+      "Immediate Repayment": null,
+    },
+    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
+    showLoanTypes: false, // true if both IR and IO are available
+    loanTypes: ["Interest Only"],
+    locations: ["Metro 1", "Metro 2", "Metro 3"],
+    metros: [
+      // list in same order as locations array above
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // // match loanInfo to Program 1 above
+          maxLoanAmt: 28750,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 7,
+            apr36: 11.5,
+            apr60: 12.8,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+    ],
+  },
+  {
+    name: "Cybersecurity Nights & Weekends",
+    url: "https://my.skills.fund/application?lenderCode=SFCSNWPT20",
     loanInfo: {
       // match loanInfo in first metro below
       maxLoanAmt: 22000,
